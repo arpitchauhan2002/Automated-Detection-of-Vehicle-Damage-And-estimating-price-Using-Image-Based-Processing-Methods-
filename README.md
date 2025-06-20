@@ -2,7 +2,7 @@
 
 A deep learning project using **Detectron2 + Mask R-CNN** for automated damage detection on vehicles and cost prediction for insurance claims and repair optimization.
 
-![Example Output](output/sample_output.png)
+![Example Output](Screenshot 2025-06-21 022603.png)
 
 ## 📌 Problem Statement
 
