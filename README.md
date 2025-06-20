@@ -2,8 +2,7 @@
 
 A deep learning project using **Detectron2 + Mask R-CNN** for automated damage detection on vehicles and cost prediction for insurance claims and repair optimization.
 
-![Detected Damage](images/Screenshot 2025-06-21 022603.png)
-
+![Detected Damage](3c6e2031-b631-4d17-90d4-64acaaba02a5.png)
 ## 📌 Problem Statement
 
 Filing car insurance claims traditionally involves manual inspections, paperwork, and delays. This project automates damage detection and repair cost estimation using image data—speeding up the claims process and reducing fraud.
