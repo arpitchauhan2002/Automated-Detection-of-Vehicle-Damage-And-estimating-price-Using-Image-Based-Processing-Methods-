@@ -14,12 +14,15 @@ This project demonstrates an end-to-end deep learning approach for autonomous dr
 
 ```bash
 .
-├── drive.py               # Real-time inference and communication with simulator
-├── model.py               # Model definition using NVIDIA architecture
-├── model.h5               # Trained model weights
-├── data_preprocess.py     # Data balancing, augmentation and preprocessing
-├── train.py               # Model training pipeline
-├── track/                 # Dataset folder (cloned from GitHub)
+self-driving-car/
+├── final.ipynb                 # Your full Jupyter notebook
+├── model.h5                    # Trained model file (optional to upload)
+├── track/                      # Folder from GitHub clone (not uploaded directly to GitHub)
 │   ├── driving_log.csv
 │   └── IMG/
-└── README.md              # You're reading this :)
+├── README.md                   # GitHub overview (provided below)
+├── requirements.txt            # Dependencies
+└── utils/
+    ├── simulator_gif.gif       # (Optional) Demo driving gif
+    └── sample_images/          # (Optional) Zoomed, flipped, panned examples
+
