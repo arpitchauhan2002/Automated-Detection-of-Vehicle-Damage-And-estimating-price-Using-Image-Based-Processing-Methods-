@@ -1,28 +1,56 @@
-# 🚗 Self-Driving Car using Deep Learning (Udacity Simulator)
+# 🚗 Automated Vehicle Damage Detection and Repair Cost Estimation
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/12345678/placeholder.gif" alt="Self-driving car demo" width="80%">
-</p>
+A deep learning project using **Detectron2 + Mask R-CNN** for automated damage detection on vehicles and cost prediction for insurance claims and repair optimization.
 
-## 🧠 Project Overview
+![Example Output](output/sample_output.png)
 
-This project demonstrates an end-to-end deep learning approach for autonomous driving using the Udacity simulator. The system learns to predict steering angles from front-facing camera images using a convolutional neural network (CNN) based on NVIDIA's architecture.
+## 📌 Problem Statement
+
+Filing car insurance claims traditionally involves manual inspections, paperwork, and delays. This project automates damage detection and repair cost estimation using image data—speeding up the claims process and reducing fraud.
 
 ---
 
-## 📁 Project Structure
+## 🧠 Model & Methodology
+
+- **Model Used:** Mask R-CNN (via Facebook AI’s Detectron2)
+- **Dataset:** Car Damage Detection (CarDD)
+- **Training Data:** 2819 images across 6 damage types:
+  - Dent
+  - Scratch
+  - Crack
+  - Glass Shatter
+  - Lamp Broken
+  - Tire Flat
+- **Evaluation Metrics:**
+  - mAP (Mean Average Precision)
+  - IoU (Intersection over Union)
+- **Cost Estimation:** Based on IoU using Linear Regression
+
+---
+
+## ⚙️ How it Works
+
+1. **Upload a vehicle image**
+2. **Model detects damages** using instance segmentation
+3. **IoU is calculated** against ground truth
+4. **Cost prediction** via linear regression model
+
+---
+
+## 🗂️ File Structure
+
+| File | Description |
+|------|-------------|
+| `final.ipynb` | Complete training + inference notebook |
+| `research_paper.pdf` | Full research methodology & results |
+| `output/` | Annotated sample image(s) |
+| `requirements.txt` | Dependencies and setup instructions |
+
+---
+
+## 🔧 Installation
 
 ```bash
-.
-self-driving-car/
-├── final.ipynb                 # Your full Jupyter notebook
-├── model.h5                    # Trained model file (optional to upload)
-├── track/                      # Folder from GitHub clone (not uploaded directly to GitHub)
-│   ├── driving_log.csv
-│   └── IMG/
-├── README.md                   # GitHub overview (provided below)
-├── requirements.txt            # Dependencies
-└── utils/
-    ├── simulator_gif.gif       # (Optional) Demo driving gif
-    └── sample_images/          # (Optional) Zoomed, flipped, panned examples
-
+git clone https://github.com/yourusername/car-damage-detection-cost-estimation.git
+cd car-damage-detection-cost-estimation
+pip install -r requirements.txt
